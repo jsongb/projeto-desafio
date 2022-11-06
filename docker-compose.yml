@@ -1,10 +1,17 @@
 version: '3'
 
 services:
-  api:
-    build: .
-    command: python manage.py runserver 0.0.0.0:8000
+  api-desafio:
+    build:
+      context: ./api-desafio
+      dockerfile: Dockerfile
+    command: sh -c ". ./start.sh"
     volumes:
-      - .:/api
+      - ./api-desafio:/api
     ports:
       - "8000:8000"
+
+  front-desafio:
+    build:
+      context: ./front-desafio
+      dockerfile: Dockerfile
