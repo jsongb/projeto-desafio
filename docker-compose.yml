@@ -1,10 +1,9 @@
-version: '3'
+version: '3.7'
 
 services:
   api-desafio:
-    build:
-      context: ./api-desafio
-      dockerfile: Dockerfile
+    container_name: api_desafio
+    build: "./api-desafio"
     command: sh -c ". ./start.sh"
     volumes:
       - ./api-desafio:/api
@@ -12,6 +11,7 @@ services:
       - "8000:8000"
 
   front-desafio:
-    build:
-      context: ./front-desafio
-      dockerfile: Dockerfile
+    container_name: front_desafio
+    build: "./front-desafio"
+    ports:
+      - "8080:8080"
