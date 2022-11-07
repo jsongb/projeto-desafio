@@ -2,17 +2,22 @@
 
 Desenvolvedor: Joedson Gabriel | json.gbriel@gmail.com
 
+*Esta aplicação foi disponibilizada em nuvem para poupar a necessidade de executar localmente.*
+
+- API (http): http://34.125.118.24:8000/api/
+
+- Front (http): http://34.125.118.24:8080/#/
 #
 
-## Requisitos para executar o projeto
+# Requisitos para executar o projeto
 
 * Docker Compose https://docs.docker.com/compose/install/
 
-    *OBS: Também é possível executar o projeto usando apenas Python e Node.js  (Instruções no final deste arquivo)*
+    *OBS: Também é possível executar o projeto usando apenas Python e Node.js  (Instruções no final deste documento)*
 
 #
 
-## Como executar o projeto?
+# Como executar o projeto?
 
 Utilize o docker compose
 
@@ -38,6 +43,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias
 * Infraestrutura em Docker
 * Front-end: Vue.js (Node.js)
 * Biblioteca visual frontend: Bootstrap Vue
+* Deploy: Google Cloud
 
 #
 
