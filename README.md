@@ -15,6 +15,8 @@ Desenvolvedor: Joedson Gabriel | json.gbriel@gmail.com
 
 Utilize o docker compose
 
+    docker compose build --no-cache
+
     docker compose up
 
 *Obs: O alias do docker compose pode mudar dependendo da versão: **docker-compose** ou **docker compose (v2)***
