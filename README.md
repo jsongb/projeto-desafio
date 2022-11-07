@@ -75,17 +75,10 @@ Link do Node.js: https://nodejs.org
 
 * Entre no diretório **front-desafio**:
     * ```cd front-desafio```
-* Instale as dependências usando **npm** ou **yarn**:
-    * ```npm install```
     
-        ou
-
-    * ```yarn install```
+* Instale as dependências usando **npm**:
+    * ```npm install```
 
 * Inicie o servidor front:
 
     * ```npm run serve```
-    
-        ou
-
-    * ```yarn serve```
