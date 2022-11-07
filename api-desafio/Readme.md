@@ -1,52 +1,20 @@
-# Projeto Desafio (Api do projeto)
+* **Passo a passo (API)**:
 
-Foi usado Docker com o objetivo de compatibilidade.
+    * Entre no diretório **api-desafio**:
+        * ```cd api-desafio```
 
-## Requisitos para executar o projeto
+    * Crie uma **virtual env** com o Python:
+        * ```python3 -m venv .venv```
 
-- Docker
+    * Ative a **virtual env**:
+        * Linux: ```source .venv/bin/active```
+        * Windows: ```.venv\Scripts\activate.bat```
 
-    https://docs.docker.com/desktop/
+    * Instale os **requirements.txt**:
+        * ```pip install -r requirements.txt```
 
-    
-- Make (opcional)
+    * Aplique as migrações:
+        * ```python manage.py migrate```
 
-    ```apt-get install make```
-#
-## Como executar o projeto?
-
-### Use um dos comandos abaixo
-
-* ```make start```
-
-    *Obs: para executar o Makefile é necessário instalar o **make***
-
-* Ou execute o script abaixo:
-
-    * Linux: 
-        
-        ```. start.sh```
-
-
-    * Windows: 
-        
-        ```start.bat```
-        
-* Ou execute os comandos abaixo em sequência
-
-    ```docker compose build```
-
-    ```docker compose run api python manage.py migrate```
-
-    ```docker compose run api python manage.py migrate api```
-
-    ```docker compose run api python manage.py initadmin```
-
-    ```docker compose up -d```
-
-    *Obs: Verifique a versão do docker instalada pois há uma diferença no **alias** em versões atuais (use **docker-compose** ou **docker compose {V2}**).
-
-#
-## A api ficará disponível em http://localhost:8000/api/
-
-
+    * Execute o servidor:
+        * ```python manage.py runserver 0.0.0.0:8000```
