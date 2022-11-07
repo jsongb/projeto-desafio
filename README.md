@@ -98,7 +98,7 @@ Node.js https://nodejs.org
 
 ## Passo a passo (API):
 
-* Entre no diretório **api-desafio**:
+* Acesse o diretório **api-desafio**:
     * ```cd api-desafio```
 
 * Crie um **virtual environment** com o Python: (Opcional)
@@ -120,7 +120,7 @@ Node.js https://nodejs.org
 
 ## Passo a passo (Front)
 
-* Entre no diretório **front-desafio**:
+* Acesse o diretório **front-desafio**:
     * ```cd front-desafio```
 
 * Instale as dependências usando **npm**:
