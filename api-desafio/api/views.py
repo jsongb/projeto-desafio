@@ -16,7 +16,6 @@ class UserViewSet(viewsets.ModelViewSet):
             user = User()
             user.name = request.data['name']
             user.born_date = request.data['born_date']
-            user.register = self.autoincrement()
 
             du = DjangoUser()
             du.email = request.data['email']
@@ -57,10 +56,3 @@ class UserViewSet(viewsets.ModelViewSet):
             )
 
         return HttpResponse(status=201)
-
-    def autoincrement(self):
-        no = User.objects.count()
-        if no == None:
-            return 1000
-        else:
-            return no + 1
