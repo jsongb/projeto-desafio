@@ -14,11 +14,6 @@
                         <b-icon-search/>
                     </b-btn>
 
-                    <!-- Botão de limpar a busca -->   
-                    <b-btn class="m-1" variant="warning" size="lg" :title="'Clique para limpar a busca'" @click="clearFilter">
-                        <b-icon-eraser/>
-                    </b-btn>
-
                     <!-- Botão para adicionar um novo registro -->
                     <b-btn class="m-1" variant="success" size="lg" :title="'Clique para cadastrar'" @click="openUserModal(null)">
                         <b-icon-plus/>
@@ -90,7 +85,7 @@
         // Dados usados nessa tela
         data() {
             return {
-                // Variável para formulário de filtro e busca
+                // Variável para filtro e busca
                 search: '',
 
                 // Lista de usuários
@@ -165,12 +160,6 @@
             deleteUser(user){
                 this.$store.state.current_user = user
                 this.$bvModal.show('delete-user')
-            },
-
-            // Método para limpar os filtros na busca
-            clearFilter(){
-                this.search = ''
-                this.requestUsers()
             },
         }
     }

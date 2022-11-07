@@ -112,6 +112,12 @@
                             born_date: r.data.born_date,
                             email: r.data.email,
                         }
+                    },
+                    (error)=>{
+                        Alert(
+                            'Desculpe, não foi possível obter dados do usuário',
+                            'd'
+                        )
                     }
                 )
             },
@@ -134,6 +140,12 @@
                             's'
                         )
                         this.closeUser()
+                    },
+                    (error)=>{
+                        Alert(
+                            `Desculpe, verifique se os campos foram preenchidos corretamente ${!this.$store.state.current_user?'ou se o e-mail já foi cadastrado.':''}`,
+                            'w'
+                        )
                     }
                 )
             },

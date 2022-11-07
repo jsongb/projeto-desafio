@@ -40,6 +40,12 @@
                         )
                         this.$emit('refresh')
                         this.$bvModal.hide('delete-user')
+                    },
+                    (error)=>{
+                        Alert(
+                            `Desculpe, não foi possível remover o usuário`,
+                            's'
+                        )
                     }
                 )
             },

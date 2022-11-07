@@ -28,15 +28,13 @@ class UserViewSet(viewsets.ModelViewSet):
             user.save()
 
         except Exception as e:
-            print(e)
-            
             return HttpResponse(
-                f'Desculpe, houve um problema na criação de usuário.\n\nDetalhes: {str(e)}', 
+                str(e), 
                 content_type='text/plain', 
-                status=400
+                status=500
             )
 
-        return HttpResponse(status=201)
+        return HttpResponse(status=200)
 
     def update(self, request, pk):
         try:
@@ -52,12 +50,10 @@ class UserViewSet(viewsets.ModelViewSet):
             user.save()
 
         except Exception as e:
-            print(e)
-            
             return HttpResponse(
-                f'Desculpe, houve um problema na edição de usuário.\n\nDetalhes: {str(e)}', 
+                str(e), 
                 content_type='text/plain', 
-                status=400
+                status=500
             )
 
         return HttpResponse(status=201)

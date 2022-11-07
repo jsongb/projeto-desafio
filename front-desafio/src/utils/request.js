@@ -1,6 +1,7 @@
 import axios from "axios"
 import Alert from '@/utils/Alert'
 
+// Método de requisição com a biblioteca axios
 const request = (endpoint = '', method = 'GET', data = {}, callback = ()=>{}, callback_error = ()=>{}) => {
     axios({
         method: method,
@@ -15,11 +16,7 @@ const request = (endpoint = '', method = 'GET', data = {}, callback = ()=>{}, ca
     })
     .catch((error)=>{
         console.log(error)
-        Alert(
-            'Desculpe, houve um problema de comunicação com o servidor',
-            'd'
-        )
-        callback_error()
+        callback_error(error)
     })
 }
 
