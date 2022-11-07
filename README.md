@@ -78,11 +78,11 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias
 
 ## Alternativa para executar o projeto (sem o Docker)
 
-Requisitos: 
+### Requisitos: 
 
-* Python 3 https://www.python.org/
+Python 3 https://www.python.org/
 
-* Node.js https://nodejs.org
+Node.js https://nodejs.org
 
 * **Passo a passo (API)**:
 
