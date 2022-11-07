@@ -6,7 +6,7 @@ Desenvolvedor: Joedson Gabriel | json.gbriel@gmail.com
 
 ## Requisitos para executar o projeto
 
-* Docker Compose https://docs.docker.com/desktop/
+* Docker Compose https://docs.docker.com/compose/install/
 
     *OBS: Também é possível executar o projeto usando apenas Python e Node.js  (Instruções no final deste arquivo)*
 
@@ -23,13 +23,13 @@ Utilize o docker compose
 Após a inicialização o sistema estará disponível conforme abaixo
 
 * API
-    * http://localhost:8000
+    * http://localhost:8000/api
 
 * Front
     * http://localhost:8080
 
 #
-## Sobre o projeto
+# Sobre o projeto
 Este projeto foi desenvolvido utilizando as seguintes tecnologias
 
 * Back-end: Django (Python)
@@ -39,12 +39,11 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias
 * Front-end: Vue.js (Node.js)
 * Biblioteca visual frontend: Bootstrap Vue
 
-
 #
 
 # Especificações da API Rest
-## Protocolos e endpoints
-Endpoint de usuários
+ 
+## Endpoint de usuários
 
 * Cadastro (Método POST)
     * Endpoint
@@ -79,20 +78,21 @@ Endpoint de usuários
 
 ## Alternativa para executar o projeto (sem o Docker)
 
-Requisitos: Python 3 e Node.js
+Requisitos: 
 
-Link do python: https://www.python.org/
+* Python 3 https://www.python.org/
 
-Link do Node.js: https://nodejs.org
+* Node.js https://nodejs.org
+
 * **Passo a passo (API)**:
 
     * Entre no diretório **api-desafio**:
         * ```cd api-desafio```
 
-    * Crie uma **virtual env** com o Python:
+    * Crie um **virtual environment** com o Python: (Opcional)
         * ```python3 -m venv .venv```
 
-    * Ative a **virtual env**:
+    * Ative o **virtual environment**: (Opcional)
         * Linux: ```source .venv/bin/active```
         * Windows: ```.venv\Scripts\activate.bat```
 
