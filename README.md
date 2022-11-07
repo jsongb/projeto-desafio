@@ -21,7 +21,7 @@ Utilize o docker compose
 
     docker compose up -d
 
-*Obs: O alias do docker compose pode mudar dependendo da versão: **docker-compose** ou **docker compose (v2)***
+*Obs: O alias do docker compose pode mudar dependendo da versão instalada: **docker-compose** ou **docker compose (v2)***
 
 Após a inicialização o sistema estará disponível conforme abaixo
 
