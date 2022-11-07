@@ -15,14 +15,12 @@ Desenvolvedor: Joedson Gabriel | json.gbriel@gmail.com
 
 Utilize o docker compose
 
-    docker compose build --no-cache
+* Comandos para inicialização
+   * ```docker compose build --no-cache```
+   * ```docker compose run api-desafio python manage.py migrate```
+   * ```docker compose up -d```
 
-    # caso use windows, execute a migração antes de iniciar
-    docker compose run api-desafio python manage.py migrate
-
-    docker compose up -d
-
-*Obs: O alias do docker compose pode mudar dependendo da versão instalada: **docker-compose** ou **docker compose (v2)***
+*Obs: Verifique a versão do docker instalada: **docker-compose** ou **docker compose (v2)***
 
 Após a inicialização o sistema estará disponível conforme abaixo
 
@@ -35,7 +33,7 @@ Após a inicialização o sistema estará disponível conforme abaixo
 
 #
 
-*Esta aplicação também foi disponibilizada em nuvem para poupar a necessidade de executar localmente.*
+## Esta aplicação também foi disponibilizada em nuvem para poupar a necessidade de executar localmente.
 
 - API (http): http://34.125.118.24:8000/api/
 
@@ -54,6 +52,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias
 * Biblioteca visual frontend: Bootstrap Vue
 * Deploy: Google Cloud
 
+#
 # Especificações da API Rest
  
 ## Endpoint de usuários
