@@ -17,6 +17,7 @@ Utilize o docker compose
 
     docker compose build --no-cache
 
+    # caso use windows, execute a migração antes de iniciar
     docker compose run api-desafio python manage.py migrate
 
     docker compose up -d
