@@ -42,6 +42,41 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias
 
 #
 
+# Especificações da API Rest
+## Protocolos e endpoints
+Endpoint de usuários
+
+* Cadastro (Método POST)
+    * Endpoint
+        * ```/api/user/```
+    * Formato do dado a ser enviado
+        * {
+            "name":"",
+            "email":"",
+            "born_date":"YYYY-MM-DD",
+            "password":"########"
+        }
+
+* Listagem (Método GET)
+    * Endpoint
+        * ```/api/user/```
+
+* Edição (Método PUT)
+    * Endpoint
+        * ```/api/user/<pk:register>/```
+    * Formato do dado a ser enviado
+        * {
+            "name":"",
+            "email":"",
+            "born_date":"YYYY-MM-DD",
+            "password":"########"
+        }
+* Exclusão (Método DELETE)
+    * Endpoint
+        * ```/api/user/<pk:register>/```
+
+#
+
 ## Alternativa para executar o projeto (sem o Docker)
 
 Requisitos: Python 3 e Node.js
