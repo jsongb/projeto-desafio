@@ -30,7 +30,6 @@ Após a inicialização o sistema estará disponível conforme abaixo
 
 #
 ## Sobre o projeto
-
 Este projeto foi desenvolvido utilizando as seguintes tecnologias
 
 * Back-end: Django (Python)
