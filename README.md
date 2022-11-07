@@ -1,12 +1,6 @@
 # Projeto Desafio
 
 Desenvolvedor: Joedson Gabriel | json.gbriel@gmail.com
-
-*Esta aplicação foi disponibilizada em nuvem para poupar a necessidade de executar localmente.*
-
-- API (http): http://34.125.118.24:8000/api/
-
-- Front (http): http://34.125.118.24:8080/#/
 #
 
 # Requisitos para executar o projeto
@@ -33,7 +27,17 @@ Após a inicialização o sistema estará disponível conforme abaixo
 * Front
     * http://localhost:8080
 
+
 #
+
+*Esta aplicação também foi disponibilizada em nuvem para poupar a necessidade de executar localmente.*
+
+- API (http): http://34.125.118.24:8000/api/
+
+- Front (http): http://34.125.118.24:8080/#/
+
+#
+
 # Sobre o projeto
 Este projeto foi desenvolvido utilizando as seguintes tecnologias
 
@@ -44,8 +48,6 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias
 * Front-end: Vue.js (Node.js)
 * Biblioteca visual frontend: Bootstrap Vue
 * Deploy: Google Cloud
-
-#
 
 # Especificações da API Rest
  
