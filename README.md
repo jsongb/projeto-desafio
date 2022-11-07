@@ -76,7 +76,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias
 
 #
 
-## Alternativa para executar o projeto (sem o Docker)
+# Alternativa para executar o projeto (sem o Docker)
 
 ### Requisitos: 
 
@@ -84,29 +84,29 @@ Python 3 https://www.python.org/
 
 Node.js https://nodejs.org
 
-* **Passo a passo (API)**:
+## Passo a passo (API):
 
-    * Entre no diretório **api-desafio**:
-        * ```cd api-desafio```
+* Entre no diretório **api-desafio**:
+    * ```cd api-desafio```
 
-    * Crie um **virtual environment** com o Python: (Opcional)
-        * ```python3 -m venv .venv```
+* Crie um **virtual environment** com o Python: (Opcional)
+    * ```python3 -m venv .venv```
 
-    * Ative o **virtual environment**: (Opcional)
-        * Linux: ```source .venv/bin/active```
-        * Windows: ```.venv\Scripts\activate.bat```
+* Ative o **virtual environment**: (Opcional)
+    * Linux: ```source .venv/bin/active```
+    * Windows: ```.venv\Scripts\activate.bat```
 
-    * Instale os **requirements.txt**:
-        * ```pip install -r requirements.txt```
+* Instale os **requirements.txt**:
+    * ```pip install -r requirements.txt```
 
-    * Aplique as migrações:
-        * ```python manage.py migrate```
+* Aplique as migrações:
+    * ```python manage.py migrate```
 
-    * Execute o servidor:
-        * ```python manage.py runserver 0.0.0.0:8000```
+* Execute o servidor:
+    * ```python manage.py runserver 0.0.0.0:8000```
+#
 
-
-### Passo a passo (Front)
+## Passo a passo (Front)
 
 * Entre no diretório **front-desafio**:
     * ```cd front-desafio```
