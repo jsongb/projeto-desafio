@@ -75,7 +75,7 @@ Link do Node.js: https://nodejs.org
 
 * Entre no diretório **front-desafio**:
     * ```cd front-desafio```
-    
+
 * Instale as dependências usando **npm**:
     * ```npm install```
 
