@@ -19,7 +19,7 @@ Utilize o docker compose
 
     docker compose run api-desafio python manage.py migrate
 
-    docker compose up
+    docker compose up -d
 
 *Obs: O alias do docker compose pode mudar dependendo da versão: **docker-compose** ou **docker compose (v2)***
 
